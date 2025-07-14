@@ -1,11 +1,12 @@
 import React from "react"
+import Link from "next/link"
 
 function layout({children}) {
   return (
     <div>
       <nav className="flex gap-x-2">
-        <a className="underline" href="/dashboards/entreprise">Dashboard finance</a>
-        <a className="underline" href="/dashboards/rh">Dashboard RH</a>
+        <Link className="underline" href="/dashboards/entreprise">Dashboard finance</Link>
+        <Link className="underline" href="/dashboards/rh">Dashboard RH</Link>
       
     </nav>
     {children}
