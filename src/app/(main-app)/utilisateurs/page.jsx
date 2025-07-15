@@ -1,8 +1,11 @@
 
 async function page() {
 
-  const users = await new Promise(resolve => {
-    setTimeout(() => resolve(["Victor", "Sarah", "Anna"]), 2000)
+  // const users = await new Promise(resolve => {
+  //   setTimeout(() => resolve(["Victor", "Sarah", "Anna"]), 2000)
+  // })
+  const users = await new Promise(resolve, reject => {
+    setTimeout(() => reject(new Error("ERREUR")), 2000)
   })
 
   return (

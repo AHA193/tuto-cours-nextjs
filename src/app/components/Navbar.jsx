@@ -7,7 +7,7 @@ function Navbar() {
     // console.log(pathname);
 
   return (
-    <nav className="flex gap-x-2">
+    <nav className="flex gap-x-2 mb-6">
         <Link className="underline" href="/">Accueil</Link>
         <Link className="underline" href="/blog">Blog</Link>
         <Link className="underline" href="/dashboards">Dashboards</Link>
